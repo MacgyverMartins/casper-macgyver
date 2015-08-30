@@ -4,11 +4,15 @@
 {{! The big featured header }}
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
   <nav class="main-nav overlay clearfix">
-    {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
     <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    <a class="subscribe-button" href="{{@blog.url}}/sobre/">sobre</a>
+    <!--<a class="subscribe-button" href="{{@blog.url}}/sobre/">sobre</a>-->
   </nav>
   <div class="vertical">
+    {{#if @blog.logo}}
+    <div class="my-img">
+      <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+    </div>
+    {{/if}}
     <div class="main-header-content inner">
       <h1 class="page-title">{{@blog.title}}</h1>
       <h2 class="page-description">{{@blog.description}}</h2>
