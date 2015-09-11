@@ -95,4 +95,17 @@
         });
 
     };
+
+   $(document).ready(function(){
+     $(window).bind('scroll', function() {
+     var navHeight = $( window ).height();
+       if ($(window).scrollTop() > navHeight) {
+         $('#navIndex').addClass('fixed');
+       }
+       else {
+         $('#navIndex').removeClass('fixed');
+       }
+    });
+  });
+
 })(jQuery, 'smartresize');

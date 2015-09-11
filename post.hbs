@@ -14,6 +14,9 @@ the {body} of the default.hbs template, which contains our header/footer. }}
   </nav>
 </header>
 
+{{! The tag below includes the post loop - partials/navigation.hbs }}
+{{> "navigation"}}
+
 <main class="content" role="main">
 
 <article class="{{post_class}}">
