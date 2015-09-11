@@ -530,8 +530,7 @@ margin on the iframe, cause it breaks stuff. */
 .fluid-width-video-wrapper iframe {
   margin: 0;
 }
-
-.content{
+.content {
   padding-top: 100px;
 }
 /* ==========================================================================
@@ -952,10 +951,10 @@ body:not(.post-template) .post-title {
   position: absolute;
   left: 0;
   right: 0;
-  -webkit-transition:  .500s all ease ;
-  -moz-transition:  .500s all ease;
-  -o-transition:  .500s all ease;
-  transition:  .500s all ease ;
+  -webkit-transition: .500s all ease;
+  -moz-transition: .500s all ease;
+  -o-transition: .500s all ease;
+  transition: .500s all ease;
 }
 .navbar ul {
   list-style: none;
@@ -982,7 +981,6 @@ body:not(.post-template) .post-title {
 .navbar ul li a label {
   display: none;
 }
-
 .fixed {
   background-color: #2F2F2F;
   position: fixed;
@@ -991,10 +989,10 @@ body:not(.post-template) .post-title {
   left: 0;
   right: 0;
 }
-.fixed ul li a{
+.fixed ul li a {
   color: #A9A8A8;
 }
-.fixed ul li a:hover{
+.fixed ul li a:hover {
   color: #E4E4E4;
 }
 /* ==========================================================================
@@ -1220,7 +1218,7 @@ body:not(.post-template) .post-title {
   min-height: 100px;
   background: transparent;
 }
-.index-cover.main-header{
+.index-cover.main-header {
   background-attachment: fixed;
 }
 .author-profile {
@@ -1557,7 +1555,6 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 500px) {
   .main-header {
-    margin-bottom: 15px;
     height: 40%;
   }
   .no-cover.main-header {
@@ -1617,6 +1614,15 @@ body:not(.post-template) .post-title {
   }
   .blog-logo img {
     max-height: 80px;
+  }
+  .navbar ul {
+    float: none;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 300px;
+  }
+  .navbar ul li a span {
+    padding: 5px 37px;
   }
   .inner,
   .pagination {
